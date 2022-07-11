@@ -12,7 +12,7 @@ function buttonClickGET() {
 	$.get(url, callback).done(function() {
 	})
 	.fail(function() {
-		alert( "error" );
+		alert( "Requête HTTP interdite" );
 	})
 	.always(function() {
 		//alert( "finished" );
