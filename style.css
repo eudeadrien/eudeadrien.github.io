@@ -14,7 +14,7 @@ h1 {
 }
 
 header {
-	background-color:red;
+	background-color:rgb(82, 209, 58);
 	margin-top: -15px;
 	top: 0px;
 }
@@ -58,7 +58,12 @@ div {
 	color: white;
 }
 
-/* HERO */
+.zone_meteo {
+	padding: 2rem;
+	font-family: 'Kanit';
+}
+
+/* PAGE EXTRA */
 .hero {
 	min-height: 100vh;
 	background-image: linear-gradient(rgb(0,0,0, 0.6), transparent), url(Images/bg_space.jpg);
@@ -72,7 +77,7 @@ div {
 	margin-top: -15px;
 }
 .hero h2 {
-	font-size:42px;
+	font-size:70px;
 	font-family: 'Splash';
 }
 .hero h3 {
@@ -81,6 +86,43 @@ div {
 }
 button {
 	padding: 0.5rem 1rem;
+	font-size: 14px;
+	cursor: pointer;
+	font-family: 'Kanit';
+	border-color: black;
+	border: 1px;
+}
+
+/* PAGE METEO */
+.divmeteo {
+	min-height: 100vh;
+	background-image: linear-gradient(rgb(0,0,0, 0.6), transparent), url(Images/prevision-meteo.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -65px;
+}
+.divmeteo h2 {
+	font-size:70px;
+	font-family: 'Splash';
+	padding: 3rem;
+	
+}
+.entré_meteo {
+	padding: 0.5rem 1rem;
+	font-size: 14px;
+	cursor: pointer;
+	font-family: 'Kanit';
+	border-color: black;
+	border: 2px solid;
+}
+.bouton_meteo {
+	margin-top: 35px;
+	padding: 0.5rem 2rem;
 	font-size: 14px;
 	cursor: pointer;
 	font-family: 'Kanit';

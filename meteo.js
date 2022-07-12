@@ -1,7 +1,10 @@
 var callback = function(data) {
 	console.log("données api", data)
 	var element = document.getElementById("zone_meteo");
-	element.innerHTML = "Il est " + data.current.observation_time + " et il fait " + data.current.temperature + " C a " + data.location.name;
+	var icon = document.getElementById("icon_meteo");
+	let img = new Image();
+	img.src = 
+	element.innerHTML = "Il faisait " + data.current.temperature + " °C à " + data.location.name + " vers " + data.current.observation_time ;
 }
 
 

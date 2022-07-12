@@ -18,7 +18,7 @@
 		<ul>
 			<li><a href="index.html" class="lien">Acceuil</a>
 			<li><a href="moi.html" class="lien">Moi</a>
-			<li><a href="mon_parcour.html" class="lien">Mon parcour</a>
+			<li><a href="mon_parcours.html" class="lien">Mon parcours</a>
 			<li><a href="mes_projets.html" class="lien">Mes projets</a>
 			<li><a href="extra.html" class="lien">Extra</a>
 			<li><a href="meteo.html">
@@ -29,12 +29,15 @@
 	</header>
 	<br>
 	<br>
+	<br>
 	
-	<div  align="center" >
-		<input id="queryLoc" type="text" value="Paris" />
-		<input type="button" value="METEO" onclick="buttonClickGET()" />
+	<section  class="divmeteo">
+		<h2>Météo</h2>
+		<input class="entré_meteo" id="queryLoc" type="text" value="Paris" />
+		<input class="bouton_meteo" type="button" value="Météo" onclick="buttonClickGET()" font-family='Kanit'; />
 	<p id="zone_meteo" class="zone_meteo"></p>	
-	</div>
+	<p id="icon_meteo" class="icone_meteo"></p>	
+	</section>
 	
 </body>
 </html>
