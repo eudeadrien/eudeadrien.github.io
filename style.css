@@ -10,34 +10,8 @@ h1 {
 	color: black;
 	text-align: center;
 	font-style: bold;
+	font-family: 'Splash';
 
-}
-
-main {
-	background: gray;
-	font-size: 24px;
-	color: blue;
-	width: 70vw;
-	text-align: center;
-	margin: 0 auto;
-	
-}
-
-h2 {
-	text-transform: uppercase;
-	font-size: 24px;
-	color: green;
-	text-align: center;
-}
-
-ul {
-	color: blue;
-	text-align: center;
-	font-size: 24px;
-	color: blue;
-	width: 10vw;
-	margin: 0 auto;
-	font-style: italic;
 }
 
 header {
@@ -46,3 +20,40 @@ header {
 	top:0px;
 	margin:0px;
 }
+
+main-head {
+	background-color: red;
+	color: white;
+	
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+nav {
+	min-height: 10vh;
+	display: flex;
+	align-items: center;
+	width: 90%;
+	margin: 10px;
+}
+
+nav ul {
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	font-size: 25px;
+}
+
+#logo {
+	flex: 1 1 40rem;
+}
+
+div {
+	align-items: center;
+}
+

@@ -4,22 +4,36 @@
 <head>
 	<meta charset="UFT-8">
 	<meta name="viewport" content="witdh=device-width,intial-scale=1.0">
-	<title> Site Web </title>
+	<title> AD Web - Météo </title>
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="meteo.js"> </script>
+	<link href="https://fonts.googleapis.com/css?family=Splash" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h1> Bienvenue sur mon site web !! </h1>
-		<br>
-		<br>
+	<header  class="main-head">
+	<nav>
+		<h1>  Adrien eude </h1>
+		<ul>
+			<li><a href="index.html">Acceuil</a>
+			<li><a href="#">Moi</a>
+			<li><a href="#">Mon parcours</a>
+			<li><a href="#">Mes projets</a>
+			<li><a href="#">Extra</a>
+			<li><a href="meteo.html">
+		<img src="Images/meteo-noirblanc.png" alt="pas d'image trouvé" width="60" >
+			</a>
+		</ul>
+	</nav>
 	</header>
 	<br>
+	<br>
 	
+	<div  align="center" >
+		<input id="queryLoc" type="text" value="Paris" />
+		<input type="button" value="METEO" onclick="buttonClickGET()" />
+	<p id="zone_meteo" class="zone_meteo"></p>	
+	</div>
 	
-	<input id="queryLoc" type="text" value="Paris" />
-	<input type="button" value="METEO" onclick="buttonClickGET()" />
-	<p id="zone_meteo"></p>	
 </body>
 </html>

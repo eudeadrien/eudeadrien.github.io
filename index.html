@@ -4,117 +4,27 @@
 <head>
 	<meta charset="UFT-8">
 	<meta name="viewport" content="witdh=device-width,intial-scale=1.0">
-	<title> Site Web </title>
+	<title> AD Web  </title>
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="meteo.js"> </script>
-	<style>
-          
-        [data-tab-info] {
-            display: none;
-        }
-          
-        .active[data-tab-info] {
-            display: block;
-        }
-          
-        .tab-content {
-            font-size: 30px;
-            font-family: sans-serif;
-            font-weight: bold;
-            color: blue;
-			text-align: center;
-        }
-          
-        .tabs {
-            font-size: 22px;
-            color: black;
-            display: block;
-            margin: 0;
-			text-align: center;
-
-        }
-          
-        .tabs span {
-            background: red;
-            padding: 10px;
-            border: 1px solid red;
-			text-align: center;
-        }
-          
-        .tabs span:hover {
-            background: darkred;
-            cursor: pointer;
-            color: white;
-        }
-    </style>
+	<link href="https://fonts.googleapis.com/css?family=Splash" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h1> Bienvenue sur mon site web !! </h1>
-		<br>
-		<br>
-	<div class="tabs">
-        <span data-tab-value="#tab_1">Acceuil</span>
-		<span data-tab-value="#tab_2">Moi</span>
-        <span data-tab-value="#tab_3">Mon parcours</span>
-        <span data-tab-value="#tab_4">Mes projets</span>
-        <span data-tab-value="#tab_5">Extra</span>
-
-    </div>
-  
-    <div class="tab-content">
-        <div class="tabs__tab active" id="tab_1" data-tab-info>
-            <div>
-				<p>Vous êtes sur la page d'acceuil</p>
-		    <p><iframe src="page_acceuil.txt"></iframe></p>
-			</div>
-  
-        </div>
-        <div class="tabs__tab" id="tab_2" data-tab-info>
-            <p>Ici c'est mon profil</p>
-  
-        </div>
-        <div class="tabs__tab" id="tab_3" data-tab-info>
-            <p>Mon parcours</p>
-  
-        </div>
-		<div class="tabs__tab" id="tab_4" data-tab-info>
-            <p>Mes projets</p>
-  
-        </div>
-		<div class="tabs__tab" id="tab_5" data-tab-info>
-            <p>More...</p>
-  
-        </div>
-	<br>
-    </div>
-	<script type="text/javascript">
-        const tabs = document.querySelectorAll('[data-tab-value]')
-        const tabInfos = document.querySelectorAll('[data-tab-info]')
-  
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = document
-                    .querySelector(tab.dataset.tabValue);
-  
-                tabInfos.forEach(tabInfo => {
-                    tabInfo.classList.remove('active')
-                })
-                target.classList.add('active');
-            })
-        })
-    </script>
+	<header class="main-head">
+	<nav>
+		<h1>  Adrien eude </h1>
+		<ul>
+			<li><a href="#">Acceuil</a>
+			<li><a href="#">Moi</a>
+			<li><a href="#">Mon parcours</a>
+			<li><a href="#">Mes projets</a>
+			<li><a href="#">Extra</a>
+			<li><a href="meteo.html">
+			<img src="Images/meteo-noirblanc.png" alt="pas d'image trouvé" width="60" >
+			</a>
+		</ul>
+	</nav>
 	</header>
-	<br>
-	
-	<a href="meteo.html">
-		<img src="Images/meteo_ima.jpg" alt="pas d'image trouvé" width="60" >
-	</a>
-	
-	
-	<!--<input id="queryLoc" type="text" value="Paris" />
-	<input type="button" value="METEO" onclick="buttonClickGET()" />
-	<p id="zone_meteo"></p>	-->
 </body>
 </html>
