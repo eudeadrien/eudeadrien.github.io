@@ -74,7 +74,7 @@ div {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: -15px;
+	margin-top: -10px;
 }
 .hero h2 {
 	font-size:70px;
@@ -148,4 +148,18 @@ button {
 .bt_meteo {
 	display: flex;
 	flex-direction: lign;
+}
+
+.horloge{
+	display: flex;
+	flex-direction: lign;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-weight: ;
+	border-color: black;
+	border: 2px solid;
+	border-radius: 10px ;
+	padding: 0.1rem 0.3rem;
+	
 }
