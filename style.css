@@ -43,7 +43,7 @@ nav ul {
 	justify-content: space-around;
 	align-items: center;
 	list-style: none;
-	font-size: 22px;
+	font-size: 25px;
 	font-family: 'Kanit';
 }
 
@@ -117,6 +117,12 @@ button {
 	font-size:100px;
 	font-family: 'Splash';
 	padding: 3rem;
+}
+
+.divmeteo h3 {
+	font-size: 25px;
+	font-family: 'Kanit';
+	padding: 2rem;
 }
 
 .entré_meteo {
