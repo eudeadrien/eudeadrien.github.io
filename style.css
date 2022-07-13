@@ -54,12 +54,14 @@ nav ul {
 div {
 	align-items: center;
 }
+
 .lien:hover {
 	color: white;
 }
 
 .zone_meteo {
 	padding: 2rem;
+	font-size: 25px;
 	font-family: 'Kanit';
 }
 
@@ -76,17 +78,21 @@ div {
 	align-items: center;
 	margin-top: -10px;
 }
+
 .hero h2 {
-	font-size:70px;
+	font-size:100px;
 	font-family: 'Splash';
 }
+
 .hero h3 {
 	font-family: 'Kanit';
+	font-size: 25px;
 	padding: 3rem;
 }
+
 button {
 	padding: 0.5rem 1rem;
-	font-size: 14px;
+	font-size: 25px;
 	cursor: pointer;
 	font-family: 'Kanit';
 	border-color: black;
@@ -106,31 +112,33 @@ button {
 	align-items: center;
 	margin-top: -65px;
 }
+
 .divmeteo h2 {
-	font-size:70px;
+	font-size:100px;
 	font-family: 'Splash';
 	padding: 3rem;
-	
 }
+
 .entré_meteo {
 	padding: 0.5rem 1rem;
-	font-size: 14px;
+	font-size: 25px;
 	cursor: pointer;
 	font-family: 'Kanit';
 	border-color: black;
 	border: 2px solid;
 }
+
 .bouton_meteo {
 	margin-top: 35px;
 	padding: 0.5rem 2rem;
-	font-size: 14px;
+	font-size: 25px;
 	cursor: pointer;
 	font-family: 'Kanit';
 	border-color: black;
 	border: 1px;
 	display: flex;
-
 }
+
 .ref_meteo {
 	margin-top: 35px;
 	padding: 0.5rem 1rem;
@@ -140,14 +148,6 @@ button {
 	border-color: black;
 	border: 1px solid;
 	display: flex;
-}
-.descrip_meteo {
-	font-family: 'Kanit';
-	padding: 2rem;
-}
-.bt_meteo {
-	display: flex;
-	flex-direction: lign;
 }
 
 .horloge{
@@ -161,5 +161,4 @@ button {
 	border: 2px solid;
 	border-radius: 10px ;
 	padding: 0.1rem 0.3rem;
-	
 }
