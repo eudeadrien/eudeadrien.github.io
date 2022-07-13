@@ -33,8 +33,12 @@
 	
 	<section  class="divmeteo">
 		<h2>Météo</h2>
-		<input class="entré_meteo" id="queryLoc" type="text" value="Paris" />
-		<input class="bouton_meteo" type="button" value="Météo" onclick="buttonClickGET()" font-family='Kanit'; />
+		<p class="descrip_meteo"> Il faut entrer le code INSEE de la ville souhaité. Pour plus d'info cliquez sur le bouton correspondant. </p>
+		<input class="entré_meteo" id="queryLoc" type="text"  required />
+		<div class="bt_meteo">
+			<input class="bouton_meteo" type="button" value="Recherche" onclick="buttonClickGET()" font-family='Kanit'; />
+			<input class="ref_meteo" type="button" value="INSEE ?" font-family='Kanit' onclick="window.location.href = 'https://www.dcode.fr/code-commune-insee';" />
+		</div>
 	<p id="zone_meteo" class="zone_meteo"></p>	
 	<p id="icon_meteo" class="icone_meteo"></p>	
 	</section>
