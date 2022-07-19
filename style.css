@@ -50,26 +50,21 @@ nav ul {
 }
 
 /*====================MENU DEROULANT=========================*/
-nav ul::after {
+/*nav ul::after {
 	content:"";
 	display:table;
 	clear:both;
-}
+}*//*
 .sous {
 	display: none;
-	/*box-shadow: 0px 1px 2px #CCC;*/
 	background-color: white;
 	margin-top: 5px;
 }
 nav > ul li:hover .sous {
 	display: block;
 }
-nav a:hover {
-
-}
 .sous li {
 	float: none;
-	/*width: 100%;*/
 	text-align: left;
 }
 .sous a {
@@ -79,10 +74,9 @@ nav a:hover {
 }
 .sous a:hover{
 	border-bottom: none;
-	/*background-color: rgba(200, 200, 200, 0.1);*/
 }
 .deroulant > a::after {
-	/*content:"▼";*/
+	content:"▼";
 	font-size: 12px;
 
 }
@@ -94,7 +88,6 @@ nav a:hover {
 }
 .sous{
 	display:none;
-	/*box-shadow: 0px 1px 2px #CCC;*/
 	background-color: rgb(  204, 205, 204  );
 	position: absolute;
 	width: 100px;
@@ -102,13 +95,12 @@ nav a:hover {
 }
 nav ul il {
 	float: left;
-	/*width: 25%;*/
-	text-align:center;
+	text-align: center;
 	position: relative;
 }
 nav a:hover {
 	border-bottom: 2px solid gold;
-}
+}*/
 /*============================================================*/
 #logo {
 	flex: 1 1 40rem;
