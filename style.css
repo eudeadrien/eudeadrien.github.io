@@ -54,7 +54,7 @@ nav ul {
 	content:"";
 	display:table;
 	clear:both;
-}*//*
+}*/
 .sous {
 	display: none;
 	background-color: white;
@@ -76,7 +76,7 @@ nav > ul li:hover .sous {
 	border-bottom: none;
 }
 .deroulant > a::after {
-	content:"▼";
+	/*content:"▼";*/
 	font-size: 12px;
 
 }
@@ -100,7 +100,7 @@ nav ul il {
 }
 nav a:hover {
 	border-bottom: 2px solid gold;
-}*/
+}
 /*============================================================*/
 #logo {
 	flex: 1 1 40rem;
