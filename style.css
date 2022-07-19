@@ -35,6 +35,7 @@ nav {
 	align-items: center;
 	width: 90%;
 	margin: 10px;
+	position:sticky;/*j'ai add*/
 }
 
 nav ul {
@@ -45,8 +46,70 @@ nav ul {
 	list-style: none;
 	font-size: 25px;
 	font-family: 'Kanit';
+	list-style-type: none;
 }
 
+/*====================MENU DEROULANT=========================*/
+nav ul::after {
+	content:"";
+	display:table;
+	clear:both;
+}
+.sous {
+	display: none;
+	/*box-shadow: 0px 1px 2px #CCC;*/
+	background-color: white;
+	margin-top: 5px;
+}
+nav > ul li:hover .sous {
+	display: block;
+}
+nav a:hover {
+
+}
+.sous li {
+	float: none;
+	/*width: 100%;*/
+	text-align: left;
+}
+.sous a {
+	padding: 10px;
+	border-bottom: none;
+	font-size: 20px;
+}
+.sous a:hover{
+	border-bottom: none;
+	/*background-color: rgba(200, 200, 200, 0.1);*/
+}
+.deroulant > a::after {
+	/*content:"▼";*/
+	font-size: 12px;
+
+}
+.deroulant a:hover {
+	color:white;
+}
+.deroulant {
+
+}
+.sous{
+	display:none;
+	/*box-shadow: 0px 1px 2px #CCC;*/
+	background-color: rgb(  204, 205, 204  );
+	position: absolute;
+	width: 100px;
+	z-index: 1000;
+}
+nav ul il {
+	float: left;
+	/*width: 25%;*/
+	text-align:center;
+	position: relative;
+}
+nav a:hover {
+	border-bottom: 2px solid gold;
+}
+/*============================================================*/
 #logo {
 	flex: 1 1 40rem;
 }
@@ -214,7 +277,6 @@ button {
 	font-family: 'Kanit';
 }
 
-
 .timeline-item-details-date, .timeline-item-details-marker, .timeline-item-details-description {
 	float: left;
 }
@@ -231,7 +293,6 @@ button {
 	opacity: 1;
 	transition: transform .3s, background-color .3s, opacity .3s;
 }
-
 
 .timeline-item-details:hover .timeline-item-details-marker {
 	transform: scale(1.3);
@@ -254,12 +315,11 @@ button {
 	transition: transform .3s, background-color .3s, font-size .3s, width .3s;
 }
 
-.timeline-item-details:hover .timeline-item-details-description{
+.timeline-item-details:hover .timeline-item-details-description {
 	opacity:1;
 	font-size: 1.4em;
 	width: 700px;
 }
-
 
 .timeline-item-details-description:before {
 	content: '';
@@ -291,7 +351,7 @@ button {
 .floating-btn {
 	width: 60px;
 	height: 60px;
-	background-color: rgb(173, 242, 133);
+	background-color: rgb(82, 209, 58);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -309,10 +369,7 @@ button {
 	width: 50px;
 }
 .floating-btn:hover {
-	background-color: rgb(82, 209, 58);
-}
-.floating-btn:hover .icone_parcours {
-	width: 50px;
+	background-color: rgb(35, 108, 21);
 }
 
 /*icone : https://www.flaticon.com/search */
