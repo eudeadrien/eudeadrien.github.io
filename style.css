@@ -48,13 +48,67 @@ nav ul {
 	font-family: 'Kanit';
 	list-style-type: none;
 }
+/*=========================ACCUEIL===========================*/
+.entete {
+	/* border: 2px solid blue; */
+	margin-top: -10px;
+	height: 140px;
+	background: linear-gradient(to bottom, rgb(82, 209, 58), white);
+	/* background-color: linear-gradient(rgb(0,0,0, 0.6),  rgb(204, 205, 204) ; */
+}
+.diapo{
+    position: relative;
+    overflow: hidden;
+	margin-left: 500px;
+	margin-right: 500px;
+}
+.diapo h1 {
+	text-align: center;
+	padding : 0rem 0rem 3rem;
+}
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+}
 
+#nav-droite{
+    right: 20px;
+}
+#nav-gauche{
+    left: 20px;
+}
+.elements{
+    display: flex;
+    transition: 1s linear;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img{
+    width: 100%;
+}
+
+.caption{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255,255,255,0.4);
+    padding: 20px;
+}
 /*====================MENU DEROULANT=========================*/
-/*nav ul::after {
+nav ul::after {
 	content:"";
 	display:table;
 	clear:both;
-}*/
+}
 .sous {
 	display: none;
 	background-color: white;
@@ -84,6 +138,7 @@ nav > ul li:hover .sous {
 	color:white;
 }
 .deroulant {
+	z-index: 1000;
 
 }
 .sous{
@@ -227,7 +282,7 @@ button {
 /*PARCOURS*/
 
 .timeline {
-	position: relative;
+	/* position: relative; */
 	min-height: 811px;
 	overflow-y: hidden;
 	min-height: 100vh;
@@ -239,7 +294,6 @@ button {
 	justify-content: center;
 	margin-top: -10px;
 }
-
 .timeline-item:before {
 	content: '';
 	position:absolute;
