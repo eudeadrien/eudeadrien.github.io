@@ -3,8 +3,9 @@ var callback = function(data) {
 	var element = document.getElementById("zone_meteo");
 	//var img =  document.getElementById("icon_meteo");
 	//img.src = data.forecast.weather_icons
-	temperature = Math.floor(data.main.temp - 273);
-	element.innerHTML = "Il fait actuellement " + temperature + " °C à " + data.name;
+	temperature = data.main.temp - 273;
+	temp = temperature.toFixed(2);
+	element.innerHTML = "Il fait actuellement " + temp + " °C à " + data.name;
 	//img.innerHTMl = img ;
 }
 
